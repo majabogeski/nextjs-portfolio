@@ -1,0 +1,196 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/section-header/section-header.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.section-header_sectionHeader__qp21X {
+    text-align: center;
+    background: var(--color-gray-0);
+    width: 100%;
+  }
+  
+  .section-header_sectionHeader__qp21X h3 {
+    color: var(--color-primary);
+    top: 10rem;
+    left: 50%;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    transform: translateX(-50%); /* Move the element to the left by half of its own width */
+    text-align: center; 
+    width: 100%; 
+    font-size: 3rem;
+ }
+    
+
+  
+  .section-header_sectionHeader__qp21X p {
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .section-header_sectionHeader__qp21X {
+      margin-bottom: 2rem;
+    }
+    .section-header_sectionHeader__qp21X h3 {
+    top: 5rem;
+    font-size: 2rem;
+    line-height: 1.15;
+   }
+    
+    .section-header_sectionHeader__qp21X p {
+        max-width: var(--container-width-md);
+    }
+  }
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/services/services.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+  .services_container__6EA6u {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 3rem;
+    gap: 3rem;
+    margin-top: 2rem; /* Retain the existing margin-top */
+    position: relative; /* Add this */
+    z-index: 1; /* Ensure the cards are above the image and text */
+  }
+
+.services_image__mRKgn {
+    height: 45rem;
+    overflow: hidden; 
+    object-fit:fill;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    /* animation: identifier 2s ease forwards; */
+    animation: services_identifier__yF157 1s ease-in forwards;
+}
+.services_imageFull__7Reek{
+    width: 100%;
+    position: relative;
+    z-index: 0; 
+}
+
+.services_service__17C7M {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 3rem 2rem;
+    opacity: 0;
+    animation: services_identifier__yF157 2s ease-in forwards;
+}
+.services_coachingServices__DmA3S{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    /* background-color:#FCF7F1; */
+    position: relative; 
+    z-index: 2; 
+    margin: -28rem auto 0;
+    padding: 4% 4% 2% 4%;
+    background: #FCF7F1;
+    transition: var(--transition);
+}
+
+
+
+
+.services_coachingServices__DmA3S:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.services_coachingServices__DmA3S p{
+    text-align: left;
+    padding-bottom: 4%;
+}
+
+
+@keyframes services_identifier__yF157 {
+    to {
+        opacity: 1;
+    }
+}
+
+.services_service__17C7M span {
+    background: var(--color-primary);
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-0);
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.services_service__17C7M h5 {
+    margin: 2.5rem 0 0.8rem;
+}
+
+.services_service__17C7M p {
+    opacity: 0.85;
+}
+
+
+@media screen and (max-width: 768px) {
+    .services_servicesWrapper__WvTSm {
+        gap: 1.2rem;
+    }
+    .services_image__mRKgn {
+        height: 22rem;
+    }
+    .services_coachingServices__DmA3S{
+        width: 90%;
+        padding: 5%;
+        margin: -43% auto 0;
+    }
+    .services_coachingServices__DmA3S p{
+        margin: 0;
+        padding-bottom: 11%;
+    }
+    .services_service__17C7M {
+     
+        padding: 8px;
+        opacity: 0;
+        animation: services_identifier__yF157 2s ease-in forwards;
+    }
+
+   
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .services_coachingServices__DmA3S {
+      width: 80%; 
+    }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/card/card.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+
+  /* card.module.css */
+
+.card_card__esRjI {
+    background: var(--color-gray-0);
+    transition: var(--transition);
+}
+
+.card_card__esRjI:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.card_bulletPoints__P49A1 {
+    list-style-type: disc; /* Use 'disc' for bullet points */
+    margin-top: 10px; /* Adjust spacing as needed */
+    padding-left: 20px; /* Adjust spacing as needed */
+    text-align: left;
+}
+

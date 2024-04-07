@@ -1,0 +1,330 @@
+
+/* From Public Directory */
+@font-face {
+  font-family: 'Alex Brush';
+  src: url('/fonts/fonts/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Arizonia';
+  src: url('/fonts/fonts/Arizonia/Arizonia-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 100;
+}
+* {
+  list-style: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+}
+
+:root {
+  --color-gray-0: #fff;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #dadee2;
+  --color-gray-300: rgba(255, 255, 255, 0.5);
+  --color-gray-300: #8e9093;
+  --color-gray-400: #999;
+  --color-gray-500: #44484b;
+  --color-gray-600: #363636;
+  --color-gray-700: #222;
+  --color-gray-800: #1f1f1f;
+  --color-gray-900: #111;
+  --small-copy:#7A7A7A;
+  --swiper-theme-color: #fff;
+  
+  --color-primary:#FF8D6D;
+  /* --color-primary: #EDAB9A; */
+  /* --color-primary: #F689A0; */
+  --color-secondary: #6E7146;
+  /* --color-secondary:#8F9779; */
+
+ 
+  /* --color-secondary: #097477; */
+  --color-footer: #02333F;
+  --color-about:#F6DED1;
+
+  --transition: all 300ms ease;
+
+  --container-width-lg: 76%;
+  --container-width-md: 94%;
+}
+
+main {
+  /* background: var(--color-gray-100) url(./assets/dark-texture.png); 8px * 8px canvas with right-angled trangled white bg with 8% opacity */
+  color: var(--color-gray-600);
+  overflow-x: hidden;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+main.dark {
+  --color-gray-0: rgb(12, 16, 35);
+  --color-gray-100: rgba(0, 0, 0, 0.6);
+  --color-gray-200: #222;
+  --color-gray-300: rgba(0, 0, 0, 0.6);
+  --color-gray-400: rgba(0, 0, 0, 0.2);
+  --color-gray-500: #44484b;
+  --color-gray-600: #d8cdcd;
+  --color-gray-700: #e9eff4;
+  --color-gray-800: #fafbfd;
+  --color-gray-900: #eee;
+  background: #121235 url(./assets/light-texture.png); /* 8px * 8px canvas with right-angled trangled white bg with 8% opacity */
+
+  --color-secondary-variant: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
+  --color-primary-variant: linear-gradient(-45deg, transparent, rgba(255, 255, 255, 0.2));
+}
+
+
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+}
+.containerContact {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    /* gap: 10%; */
+    width: 100%
+}
+
+.image {
+  height: 45rem;
+  overflow: hidden; 
+  object-fit:fill;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  /* animation: identifier 2s ease forwards; */
+  animation: identifier 1s ease-in forwards;
+}
+.imageFull{
+  width: 100%;
+}
+
+
+a {
+  color: var( --color-secondary); 
+}
+.navItems a:active {
+  text-decoration: underline;
+  text-underline-offset: 11px;
+  text-decoration-color: var(--color-primary);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--small-copy);
+  line-height: 1;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Montserrat', Sans-serif;
+}
+
+
+
+h2 {
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 57px;
+  color: var(--color-secondary);
+  font-family: 'Montserrat', Sans-serif;
+}
+
+
+h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-family: "Montserrat", Sans-serif;
+}
+h4 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-secondary);
+  font-family: "Montserrat", Sans-serif;
+}
+h5 {
+  font-size: 3rem;
+  line-height: 38px;
+  font-weight: 400;
+  font-family: "Arizonia", cursive;
+  color: var(--color-secondary);
+}
+
+
+h6 {
+  font-size: 19px;
+  color: var(--color-gray-500);
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-gray-0);
+  padding: 0.8rem 2rem;
+  width: fit-content;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn.sm {
+  padding: 0.5rem 0 1.2rem;
+}
+
+.btn.lg {
+  padding: 1.3rem 2.3rem;
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--color-secondary);
+}
+
+.btn.light {
+  background: var(--color-gray-0);
+}
+
+
+section, header, footer {
+  /* this will make the sections stand above the highlights */
+  position: relative;
+  z-index: 1;
+}
+p{
+  color: #7A7A7A;
+  /* font-size: 19px;
+  font-weight: 400; */
+}
+section > h2, section > p {
+  text-align: center;
+}
+
+section > p {
+  margin: 0.5rem 0 2rem;
+  color: #7A7A7A;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* Swiper JS needs same classes that's why we can't use modules */
+.swiper {
+  width: 30rem;
+  padding-bottom: 5rem;
+}
+
+.swiper-wrapper {
+  padding: 3rem 0 3.5rem;
+}
+
+.swiper-slide {
+  /* box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1); */
+  padding: 2rem;
+  text-align: center;
+  cursor: default;
+  background: var(--color-gray-0);
+  border: 1px solid var(--color-primary);
+  border-radius: 0 3rem 0 3rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+
+main.dark .swiper-pagination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+main.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: 2.4rem;
+  }
+  h5 {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+  }
+  h6 {
+    font-size:17px;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section > p {
+    margin:1rem 0;
+    font-size: 17px;
+    
+  }
+
+  .sectionHeader p {
+    width: var(--container-width-md);
+    margin-inline: auto;
+
+  }
+
+  .swiper {
+    width: var(--container-width-md);
+  }
+
+  .sectionHeader {
+    margin-bottom: 1.5rem;
+  }
+  .containerContact {
+    grid-template-columns: 100%;
+    width: 100%
+}
+}

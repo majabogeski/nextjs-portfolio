@@ -1,0 +1,65 @@
+
+.section {
+    max-width: 1920px;
+    margin:0 auto;
+    padding: 4rem 0 7rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 4rem;
+    align-items: start;
+  }
+  
+  .faq {
+      padding: 1rem;
+      cursor: pointer;
+      color: var(--color-gray-600);
+    }
+  
+    .faq.open {
+      background: white;
+      color: var(--color-gray-0);
+    }
+  
+    .faq.open h6 {
+      color: var(--color-primary);
+    }
+    .faq.open .iconColor {
+      color: #EDAB9A; /* Change color only for the minus sign */
+    }
+    .faq div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .faq h6 {
+      line-height: 1.6;
+    }
+  
+    .faq p {
+      margin-top: 1rem;
+      margin-left: 2.1rem;
+      font-size: 17px;
+      /* color:var(--color-gray-600); */
+      color: var(--small-copy);
+    }
+  
+    @media screen and (max-width: 768px) {
+      .section {
+        padding: 3rem 1rem 3rem;
+      }
+      .container {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .faq{
+        padding: 1rem 0;
+      }
+
+      .faq p {
+        font-size: 17px;
+      }
+    }

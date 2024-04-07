@@ -1,0 +1,148 @@
+
+/* header.module.css */
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 859px; 
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+
+
+.headerLeft {
+  position: absolute;
+  top: 30%;
+  left: 2%; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  width: 100%; /* Adjust the width as needed */
+  max-width: 963px; /* Adjust max-width as needed */
+  text-align: center;
+  opacity: 0;
+  animation: headerLeftKey 2s 1.5s ease forwards; /* Adjust animation duration and delay as needed */
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.styleShine {
+  font-size: 6rem;
+  font-family: Alex Brush;
+  color: var(--color-primary);
+  line-height: 1.2;
+  opacity: 0;
+  animation: shineKey 2s 4s ease forwards; /* Adjust animation duration and delay as needed */
+}
+
+.braveText {
+  display: inline-block;
+  opacity: 0;
+  animation: braveTextKey 1s 3s ease forwards; /* Adjust animation duration and delay as needed */
+}
+
+/* Animation for the entire headerLeft */
+@keyframes headerLeftKey {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem); /* Start from a higher position (off-screen) */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Slide down to the original position */
+  }
+}
+
+/* Animation for "Be brave enough to let it" */
+@keyframes braveTextKey {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation for "shine" */
+@keyframes shineKey {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.headerLeft p {
+  margin: 0.8rem 0 2.5rem;
+  font-size: 1.1rem;
+}
+
+.headerCta {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.headerRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+ 
+  .headerLeft  {
+    left: -5%;
+    top: 27%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .headerContainer {
+    position: relative;
+    max-width: 640px;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 525px; 
+  }
+  .headerLeft {
+    left: 2%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    width: 67%; /* Adjust the width as needed */
+    max-width: 640px; /* Adjust max-width as needed */
+    text-align: left;
+    opacity: 0;
+    animation: headerLeftKey 2s 1.5s ease forwards; 
+  }
+
+  .headerLeft p {
+    margin-bottom: 1.8rem;
+  }
+  .styleShine {
+    font-size: 4rem;
+    line-height: 1;
+    opacity: 0;
+    animation: shineKey 2s 4s ease forwards; /* Adjust animation duration and delay as needed */
+  }
+}

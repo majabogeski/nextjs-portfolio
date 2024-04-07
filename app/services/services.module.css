@@ -1,0 +1,124 @@
+
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem;
+    margin-top: 2rem; /* Retain the existing margin-top */
+    position: relative; /* Add this */
+    z-index: 1; /* Ensure the cards are above the image and text */
+  }
+
+.image {
+    height: 45rem;
+    overflow: hidden; 
+    object-fit:fill;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    /* animation: identifier 2s ease forwards; */
+    animation: identifier 1s ease-in forwards;
+}
+.imageFull{
+    width: 100%;
+    position: relative;
+    z-index: 0; 
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 3rem 2rem;
+    opacity: 0;
+    animation: identifier 2s ease-in forwards;
+}
+.coachingServices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    /* background-color:#FCF7F1; */
+    position: relative; 
+    z-index: 2; 
+    margin: -28rem auto 0;
+    padding: 4% 4% 2% 4%;
+    background: #FCF7F1;
+    transition: var(--transition);
+}
+
+
+
+
+.coachingServices:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.coachingServices p{
+    text-align: left;
+    padding-bottom: 4%;
+}
+
+
+@keyframes identifier {
+    to {
+        opacity: 1;
+    }
+}
+
+.service span {
+    background: var(--color-primary);
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-0);
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.service h5 {
+    margin: 2.5rem 0 0.8rem;
+}
+
+.service p {
+    opacity: 0.85;
+}
+
+
+@media screen and (max-width: 768px) {
+    .servicesWrapper {
+        gap: 1.2rem;
+    }
+    .image {
+        height: 22rem;
+    }
+    .coachingServices{
+        width: 90%;
+        padding: 5%;
+        margin: -43% auto 0;
+    }
+    .coachingServices p{
+        margin: 0;
+        padding-bottom: 11%;
+    }
+    .service {
+     
+        padding: 8px;
+        opacity: 0;
+        animation: identifier 2s ease-in forwards;
+    }
+
+   
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .coachingServices {
+      width: 80%; 
+    }
+}

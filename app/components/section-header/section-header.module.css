@@ -1,0 +1,42 @@
+.sectionHeader {
+    text-align: center;
+    background: var(--color-gray-0);
+    width: 100%;
+  }
+  
+  .sectionHeader h3 {
+    color: var(--color-primary);
+    top: 10rem;
+    left: 50%;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    transform: translateX(-50%); /* Move the element to the left by half of its own width */
+    text-align: center; 
+    width: 100%; 
+    font-size: 3rem;
+ }
+    
+
+  
+  .sectionHeader p {
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .sectionHeader {
+      margin-bottom: 2rem;
+    }
+    .sectionHeader h3 {
+    top: 5rem;
+    font-size: 2rem;
+    line-height: 1.15;
+   }
+    
+    .sectionHeader p {
+        max-width: var(--container-width-md);
+    }
+  }

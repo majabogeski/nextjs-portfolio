@@ -1,0 +1,169 @@
+.yogaProjectsContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.yogaProject {
+  width: 32%; /* Adjust width as needed */
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.projectDetails {
+  text-align: left;
+  margin-top: 10px;
+  padding: 0% 0 10% 2%;
+}
+
+.projectName {
+  font-weight: bold;
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+.projectLocation {
+  color: var(--color-gray-400);
+  font-size: 1rem;
+}
+.projectLocation a {
+  color: var(--color-gray-400); /* Default link color */
+  transition: color 0.3s ease; /* Smooth transition */
+  
+}
+
+.projectLocation a:hover {
+  color: var(--color-secondary); /* Change color on hover */
+  text-decoration: underline;
+}
+
+.donation {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+
+.carouselContainer {
+  position: relative;
+}
+
+.swiperContainer {
+  width: 100%;
+  background: transparent;
+}
+
+.swiperSlide {
+  width: 100%;
+  /* opacity: 0.8;  */
+  padding: 0;
+  border: none;
+}
+
+/* Overwriting styles for .swiper-button-prev and .swiper-button-next */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%; /* Change as needed */
+  width: 40px; /* Change as needed */
+  height: 40px; /* Change as needed */
+  margin-top: -20px; /* Change as needed */
+  z-index: 100; /* Change as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position the previous arrow on the left */
+}
+
+.swiper-button-next {
+  right: 10px; /* Position the next arrow on the right */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1; /* Change opacity on hover */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  margin-bottom: 20px;
+  width: calc(33.33% - 10px);
+  text-align: center;
+}
+
+.imageContainer {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.location {
+  color: #777;
+}
+.headerCta {
+  padding: 0.8rem 2rem 5rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .yogaProjectsContainer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  .projectName {
+    font-size: 28px;
+  }
+
+  .yogaProject {
+    width: 100%; /* Take full width */
+    margin-bottom: 5px; /* Add some space between items */
+  }
+  .projectLocation {
+    font-size: 19px;
+  }
+  .projectDetails {
+    text-align: left;
+    padding: 0% 0 10% 4%;
+  }
+}
+

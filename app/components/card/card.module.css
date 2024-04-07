@@ -1,0 +1,19 @@
+
+  /* card.module.css */
+
+.card {
+    background: var(--color-gray-0);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.bulletPoints {
+    list-style-type: disc; /* Use 'disc' for bullet points */
+    margin-top: 10px; /* Adjust spacing as needed */
+    padding-left: 20px; /* Adjust spacing as needed */
+    text-align: left;
+}

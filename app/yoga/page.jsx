@@ -8,13 +8,11 @@ import 'swiper/css/pagination';
 import styles from './yoga.module.css';
 import Link from 'next/link'
 import Yoga1 from '../assets/yoga1.jpg';
-import Yoga2 from '../assets/yoga2.jpg';
 import Yoga3 from '../assets/yoga3.jpg';
 import Yoga4 from '../assets/yoga4.jpg';
 import Yoga1mob from '../assets/yoga1mob.jpg';
-import Yoga2mob from '../assets/yoga2mob.jpg?v=1';
-import Yoga3mob from '../assets/yoga3mob.jpg?v=1';
-import Yoga4mob from '../assets/yoga4mob.jpg?v=1';
+import Yoga3mob from '../assets/yoga3mob.jpg';
+import Yoga4mob from '../assets/yoga4mob.jpg';
 
 import YogaPark from '../assets/yoga_park_image.jpg';
 import YogaKula from '../assets/yoga_kula_image.jpg';
@@ -56,15 +54,6 @@ const CarouselComponent = () => {
             <ResponsiveImage
               desktopSrc={Yoga1}
               mobileSrc={Yoga1mob}
-              alt="Yoga Project"
-              desktopWidth={1920}
-              mobileWidth={640}
-            />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <ResponsiveImage
-              desktopSrc={Yoga2}
-              mobileSrc={Yoga2mob}
               alt="Yoga Project"
               desktopWidth={1920}
               mobileWidth={640}
